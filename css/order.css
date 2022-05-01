@@ -1,0 +1,44 @@
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+}
+
+.nav-list {
+    list-style-type: none;
+    background-color: blueviolet;
+    border-color: aquamarine;
+    border-style: groove;
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    background-color: brown;
+}
+
+#error-message {
+    display: none;
+    color: red;
+}
+
+#delivery-address-block {
+    display: none;
+}
+
+#same-as-delivery-block {
+    display: none;
+}
+
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+form {
+    width: 50%;
+}
+
+#credit-card-block {
+    display: none;
+}

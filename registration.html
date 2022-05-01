@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registration.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <a class="nav-list">Logo</a>
+        <a href="index.html" class="nav-list">Home Page</a>
+        <a href="registration.html" class="nav-list active">Registration</a>
+        <a href="order.html" class="nav-list">Order</a>
+        <a href="features.html" class="nav-list">Features</a>
+    </nav>
+
+    <form method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+        <h2>Sign Up</h2>
+        <div>
+            <label>
+                Username
+                <input type="text">
+            </label>
+        </div>
+        <div>
+            <label>
+                Password
+                <input type="password">
+            </label>
+        </div>
+        <div>
+            <label>Male</label>
+            <input type="radio" name="gender" value="male"><br>
+            <label>Female</label>
+            <input type="radio" name="gender" value="female"><br>
+            <label>Non-binary</label>
+            <input type="radio" name="gender" value="non-binary"><br>
+        </div>
+    </form>
+</body>
+
+</html>

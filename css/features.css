@@ -1,0 +1,18 @@
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+}
+
+.nav-list {
+    list-style-type: none;
+    background-color: blueviolet;
+    border-color: aquamarine;
+    border-style: groove;
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    background-color: brown;
+}

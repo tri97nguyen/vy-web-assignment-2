@@ -1,0 +1,104 @@
+/* Google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Ubuntu+Mono&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* Variables */
+
+:root {
+    --main-color: brown;
+    --second-color: #edeea3;
+    --text-color: black;
+    --bg-color: white;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    aligh-item: center;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.menu-container .box {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: black;
+}
+
+.menu-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    object-position: center;
+    padding: 20px;
+    background: white;
+    border-radius: 0.5rem;
+}
+
+.menu-container .box h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.5rem;
+}
+
+.menu-container .box .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-container .box .content span {
+    padding: 0 1rem;
+    color: ;
+    background: ;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.menu-container .box .content a {
+    padding: 0 1rem;
+    color: ;
+    border-radius: 4px;
+    font-weight: 500;
+}

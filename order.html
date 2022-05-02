@@ -17,7 +17,7 @@
         <a href="order.html" class="nav-list active">Order</a>
         <a href="features.html" class="nav-list">Features</a>
     </nav>
-    <form method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+    <form id="form" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
         <p class="no-margin-bottom">Delivery Preference</p>
         <input id="delivery-toggler" type="radio" name="deliver-mode" value="delivery">
         <label for="html">Delivery</label><br>
@@ -83,6 +83,8 @@
                 <input class="card-input" type="password" name="cvv" maxlength="3" />
                 <label>Expiration Date</label>
                 <input class="card-input" type="date" name="exp-date" />
+                <label>Postcode</label>
+                <input class="card-input" type="text" name="postcode" />
             </label>
         </div>
 
@@ -91,7 +93,7 @@
 
 
     </form>
-    <script src="order.js"></script>
+    <script src="js/order.js"></script>
 </body>
 
 </html>

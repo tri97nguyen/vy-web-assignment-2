@@ -18,29 +18,57 @@
         <a href="features.html" class="nav-list">Features</a>
     </nav>
 
-    <form method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+    <form id="form" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
         <h2>Sign Up</h2>
         <div>
             <label>
                 Username
-                <input type="text">
+                <input type="text" class="require">
             </label>
         </div>
         <div>
             <label>
                 Password
-                <input type="password">
+                <input type="password" class="require">
             </label>
         </div>
         <div>
-            <label>Male</label>
-            <input type="radio" name="gender" value="male"><br>
-            <label>Female</label>
-            <input type="radio" name="gender" value="female"><br>
-            <label>Non-binary</label>
-            <input type="radio" name="gender" value="non-binary"><br>
+            <label>
+                <input type="radio" name="gender" value="male">
+                male
+            </label><br>
+            <label>
+                <input type="radio" name="gender" value="female">
+                female
+            </label><br>
+            <label>
+                <input type="radio" name="gender" value="non-binary">
+                non-binary
+            </label>
+            
         </div>
+        <div>
+            <label>Email</label>
+            <input type="text" name="email"  class="require">
+        </div>
+        <div>
+            <label>Opt-in to our monthly e-mail</label>
+            <input type="checkbox" name="opt-in">
+        </div>
+        <div>
+            Favorite Coffee
+            <select name="coffee" class="require">
+                <option value="cappuccino">cappuccino</option>
+                <option value="macchiato">macchiato</option>
+                <option value="expresso">expresso</option>
+                <option value="latte">latte</option>
+            </select>
+        </div>
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
     </form>
+
+    <script src="js/validation.js"></script>
 </body>
 
 </html>

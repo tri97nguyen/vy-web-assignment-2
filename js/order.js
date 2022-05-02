@@ -10,7 +10,7 @@ const creditCardBlock = document.getElementById("credit-card-block");
 const creditRadioBtns = document.getElementsByClassName("credit-radio-btn")
 const cardNumberInput = document.getElementById("card-number-input")
 const cardInputs = document.getElementsByClassName("card-input")
-
+const cardInformationInputs = document.querySelectorAll("#credit-card-block > label > input")
 
 const payPickup = document.getElementById("pay-pickup");
 const payOnline = document.getElementById("pay-online");
@@ -21,6 +21,7 @@ deliveryToggler.addEventListener("click", function showDeliverInput() {
     if (deliveryToggler.checked) {
         deliveryAddressBlock.style.display = "block"
         checkSameAsDeliveryBlock.style.display = "block"
+        deliveryAddressInput.classList.add("require")
     }
 });
 
@@ -28,6 +29,7 @@ pickupToggler.addEventListener("click", function hideDeliveryInput() {
     if (pickupToggler.checked) {
         deliveryAddressBlock.style.display = "none"
         checkSameAsDeliveryBlock.style.display = "none"
+        deliveryAddressInput.classList.remove("require")
     }
 });
 
@@ -46,6 +48,9 @@ checkSameAsDelivery.addEventListener("click", function populateBillingAddress() 
 payOnline.onclick = function toggleCreditCreditBlock() {
     if (payOnline.checked) {
         creditCardBlock.style.display = "block";
+        for (let item of cardInformationInputs) {
+            item.classList.add("require")
+        }
     }
     
 }
@@ -53,6 +58,9 @@ payOnline.onclick = function toggleCreditCreditBlock() {
 payPickup.onclick = function toggleCreditCreditBlock() {
     if (!payOnline.checked) {
         creditCardBlock.style.display = "none";
+        for (let item of cardInformationInputs) {
+            item.classList.remove("require")
+        }
     }
 }
 

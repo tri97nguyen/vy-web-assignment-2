@@ -21,29 +21,32 @@
     <form id="form" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
         <h2>Sign Up</h2>
         <div>
+            <ul id="error-message-list"></ul>
+        </div>
+        <div>
             <label>
                 Username:
-                <input type="text" class="require">
+                <input type="text" name="username" class="require">
             </label>
         </div>
         <div>
             <label>
                 Password:
-                <input type="password" class="require">
+                <input type="password" name="password" class="require">
             </label>
         </div>
         <div>
             <label>
-                <input type="radio" name="gender" value="male">
                 male
+                <input type="radio" name="gender" value="male" class="require">
             </label><br>
             <label>
-                <input type="radio" name="gender" value="female">
                 female
+                <input type="radio" name="gender" value="female" class="require">
             </label><br>
             <label>
-                <input type="radio" name="gender" value="non-binary">
                 non-binary
+                <input type="radio" name="gender" value="non-binary" class="require">
             </label>
             
         </div>
@@ -53,7 +56,7 @@
         </div>
         <div>
             <label>Opt-in to our monthly e-mail</label>
-            <input type="checkbox" name="opt-in">
+            <input type="checkbox" name="email-opt-in">
         </div>
         <div>
             Favorite Coffee

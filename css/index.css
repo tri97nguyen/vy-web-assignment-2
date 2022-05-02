@@ -1,11 +1,10 @@
 /* Google font */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Ubuntu+Mono&display=swap');
+
 * {
     font-family: 'Poppins', sans-serif;
-    font-family: 'Ubuntu Mono', monospace;
-    margin: 0;
-    padding: 0;
+    font-family: 'Ubuntu Mono';
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
@@ -13,7 +12,7 @@
 
 
 /* Variables */
-
+/* 
 :root {
     --main-color: brown;
     --second-color: #edeea3;
@@ -101,4 +100,63 @@ header {
     color: ;
     border-radius: 4px;
     font-weight: 500;
+} */
+
+#slogan-section {
+    background-image: url("../images/pablo-merchan-montes.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+#about-us-section {
+    background-color: #3e342a;
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+}
+
+#about-us-section img {
+    width: 80%;
+    padding: 50px;
+    border-radius: 20%;
+}
+
+#first-child,
+#second-child,
+#third-child {
+    width: 33%;
+    color: white;
+}
+
+#coffee-type-subsection {
+    display: flex;
+    flex-direction: column;
+}
+
+.width100 {
+    width: 200px;
+}
+
+#coffee-type-section {
+    text-align: center;
+}
+
+#coffee-type-subsection-first-child {
+    display: flex;
+    flex-direction: row;
+}
+#coffee-type-subsection-second-child {
+    display: flex;
+    flex-direction: row;
+}
+#coffee-type-subsection-third-child {
+    display: flex;
+    flex-direction: row;
 }

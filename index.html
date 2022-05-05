@@ -6,41 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <!-- Boxicons -->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Index</title>
 </head>
 
 <body>
     <!-- Navbar -->
     <header>
-        <nav id="nav-bar">
-            <a href="" class="nav-list">
-                <!-- <img height="100" width="100" src="images/logo.png" alt="Logo" class="nav__logo-img">Dreamy Coffee -->
-            </a>
-            <a href="index.html" class="nav-list active">Homepage</a>
-            <a href="registration.html" class="nav-list">Registration</a>
-            <a href="order.html" class="nav-list">Order</a>
-            <a href="features.html" class="nav-list">Features</a>
+        <nav class="navbar">
+            <!-- Logo -->
+            <img src="images/logo.png" alt="Logo" width="50">
+            <!-- Bars-icon -->
+            <div class="toggle"></div>
+            <!-- Menu-bar -->
+            <ul class="menu-bar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="features.html">Features</a></li>
+            </ul>
+
         </nav>
     </header>
+
     <main>
         <!-- Slogan -->
         <section id="slogan-section">
-            <h1>From the soul to your cup</h1>
+            <h1>From the soul to your cup.</h1>
             <p>What can we say, we love people around us to be caffeinated and wide-awake. Happy tasting!</p>
         </section>
         <!-- About Us -->
         <section id="about-us-section">
 
             <div id="first-child" style="padding: 50px;">
-                
-                <h2>About Us</h2>
-                <p>Dreamy Coffee is a café located in Australia offers a unique experience to enjoy specialty coffee and
-                    many different desserts with a nice and cozy environment.</p>
-                <p>Its differential is to create an ethical coffee business and educate consumers about the importance
-                    of conscious consumption, while striving to increase sustainability, efficiency, and quality of cup.
-                    Dreamy Coffee is a business that connects
+                <h2>About Us</h2><br>
+                <p>Dreamy Coffee is a café located in Australia offers a unique experience to enjoy specialty coffee and many different desserts with a nice and cozy environment.</p><br>
+                <p>Its differential is to create an ethical coffee business and educate consumers about the importance of conscious consumption, while striving to increase sustainability, efficiency, and quality of cup. Dreamy Coffee is a business that connects
                     with its consumers while also having a positive impact on the farmers, producers and all others.</p>
             </div>
             <div id="second-child">
@@ -50,9 +50,13 @@
                 <img src="images/IMG_3266.jpg" alt="">
             </div>
         </section>
-        <!-- Types of Coffee Beans -->
+
+        <!-- First-picture -->
+        <div class="first-picture"></div>
+
+        <!-- Coffee Types-->
         <section id="coffee-type-section">
-            <h1 id="coffee-type-section">Types of Coffee Beans</h1>
+            <h1 class="coffee-type-heading">Our Coffee Is A Never Ending Story </h1>
             <section id="coffee-type-subsection">
                 <div id="coffee-type-subsection-first-child">
                     <div>
@@ -60,111 +64,158 @@
                     </div>
                     <div>
                         <h2>Arabica</h2>
-                        <p>Arabica is the world's most common coffee bean. High-quality Arabica comes from Brazil, Colombia,
-                            Ethiopia, Ecuador, Guatemala, Costa Rica, Mexico and India. Arabica tends to have a subtle,
-                            sweet flavor with hints of chocolate, caramel,
-                            nuts or berries. It's also more expensive than Robusta, but the two are often mixed together in
-                            coffee blends. Is Arabica better than Robusta? Real-deal coffee snobs tend to say “yes,” but it
-                            ultimately depends on your preference.
+                        <p>Arabica is the world's most common coffee bean. High-quality Arabica comes from Brazil, Colombia, Ethiopia, Ecuador, Guatemala, Costa Rica, Mexico and India. Arabica tends to have a subtle, sweet flavor with hints of chocolate,
+                            caramel, nuts or berries. It's also more expensive than Robusta, but the two are often mixed together in coffee blends. Is Arabica better than Robusta? Real-deal coffee snobs tend to say “yes,” but it ultimately depends on
+                            your preference.
                         </p>
                     </div>
                 </div>
 
                 <div id="coffee-type-subsection-second-child">
                     <div>
-                        <img class="width100"  src="images/robusta.PNG" alt="Robusta Coffee">
+                        <img class="width100" src="images/robusta.PNG" alt="Robusta Coffee">
                     </div>
-                    <div >
+                    <div>
                         <h2>Robusta</h2>
-                        <p>Robusta, on the other hand, is grown in Indonesia, Vietnam, India and Brazil. It is known to have
-                            a slightly bitter earthy taste. It also has considerably more caffeine than Arabica, and because
-                            of that, it's more resilient (apparently
-                            pests don't like caffeine!). Robusta is easier to grow: it can grow at lower altitudes and is
-                            less vulnerable to weather changes than Arabica. The Robusta coffee plant also produces more
-                            coffee per hectare than Arabica (more crop
-                            per tree), which makes it cheaper.
+                        <p>Robusta, on the other hand, is grown in Indonesia, Vietnam, India and Brazil. It is known to have a slightly bitter earthy taste. It also has considerably more caffeine than Arabica, and because of that, it's more resilient (apparently
+                            pests don't like caffeine!). Robusta is easier to grow: it can grow at lower altitudes and is less vulnerable to weather changes than Arabica. The Robusta coffee plant also produces more coffee per hectare than Arabica (more
+                            crop per tree), which makes it cheaper.
                         </p>
                     </div>
                 </div>
 
                 <div id="coffee-type-subsection-third-child">
                     <div>
-                        <img class="width100"  src="images/liberica.PNG" alt="Liberica Coffee">
+                        <img class="width100" src="images/liberica.PNG" alt="Liberica Coffee">
                     </div>
                     <div>
                         <h2>Liberica</h2>
-                        <p>Liberica is native to Central and Western Africa—specifically, Liberia (hence the name!)—and only
-                            makes up approximately 2% of the world's coffee supply. It is almost extinct due to the coffee
-                            rust disease, which makes it expensive.
-                            Liberica is currently grown in Malaysia, Indonesia and the Philippines. Liberica beans have a
-                            pleasant floral aroma and a subtle woody or smoky flavor.
+                        <p>Liberica is native to Central and Western Africa—specifically, Liberia (hence the name!)—and only makes up approximately 2% of the world's coffee supply. It is almost extinct due to the coffee rust disease, which makes it expensive.
+                            Liberica is currently grown in Malaysia, Indonesia and the Philippines. Liberica beans have a pleasant floral aroma and a subtle woody or smoky flavor.
                         </p>
                     </div>
                 </div>
             </section>
-
-            
-            
         </section>
-        <!-- Menu -->
-        <section class="menu" id="menu">
-            <div class="heading">
-                <h2>Our Menu</h2>
-            </div>
-            <!-- Container -->
-            <div class="menu-container">
-                <div class="box">
-                    <img src="images/ice_caramel_macchiato.jpg" alt="Ice Caramel Macchiato">
-                    <h3>Ice Caramel Macchiato</h3>
-                    <div class="content"></div>
-                    <span>$49</span>
-                    <a href="#">Add to cart</a>
+
+        <!-- Second-picture -->
+        <div class="second-picture"></div>
+
+        <!-- Our Menu -->
+        <section>
+            <div class="menu-section">
+                <div class="menu-title">
+                    <h1>Our Menu</h1>
                 </div>
 
-                <div class="box">
-                    <img src="images/hot_americano.jpg" alt="Hot Americano">
-                    <h3>Hot Americano</h3>
-                    <div class="content"></div>
-                    <span>$40</span>
-                    <a href="#">Add to cart</a>
-                </div>
+                <div class="menu">
+                    <div class="single-menu">
+                        <img src="images/ice_caramel_macchiato.jpg" alt="Ice Caramel Macchiato">
+                        <div class="menu-content">
+                            <h4>Ice Caramel Macchiato<span>$39</span></h4>
+                            <p>Caramel Macchiato will bring a pleasant surprise when the fatty aroma of milk foam, fresh milk, the elegant bitterness of premium Espresso coffee and the bold sweetness of Caramel sauce are encapsulated in one cup of coffee.</p>
+                        </div>
+                    </div>
 
-                <div class="box">
-                    <img src="images/ice_white_coffee.jpg" alt="Ice White Coffee">
-                    <h3>Ice White Coffee</h3>
-                    <div class="content"></div>
-                    <span>$29</span>
-                    <a href="#">Add to cart</a>
-                </div>
+                    <div class="single-menu">
+                        <img src="images/hot_americano.jpg" alt="Hot Americano">
+                        <div class="menu-content">
+                            <h4>Hot Americano<span>$40</span></h4>
+                            <p>Americano is made by adding water in a certain proportion to a cup of Espresso coffee, thereby bringing out a gentle taste and preserving the typical coffee aroma.</p>
+                        </div>
+                    </div>
 
-                <div class="box">
-                    <img src="images/hot_latte.jpg" alt="Hot Latte">
-                    <h3>Hot Latte</h3>
-                    <div class="content"></div>
-                    <span>$49</span>
-                    <a href="#">Add to cart</a>
-                </div>
+                    <div class="single-menu">
+                        <img src="images/hot_latte.jpg" alt="Hot Latte">
+                        <div class="menu-content">
+                            <h4>Hot Latte<span>$49</span></h4>
+                            <p>A delicate combination between the bitter taste of pure Espresso coffee mixed with the sweet taste of hot milk, topped with a thin layer of cream to create a perfect cup of coffee in terms of taste and look.</p>
+                        </div>
+                    </div>
 
-                <div class="box">
-                    <img src="images/ice_milk_coffee.jpg" alt="Ice Milk Coffee">
-                    <h3>Ice Milk Coffee</h3>
-                    <div class="content"></div>
-                    <span>$29</span>
-                    <a href="#">Add to cart</a>
-                </div>
+                    <div class="single-menu">
+                        <img src="images/ice_white_coffee.jpg" alt="Ice White Coffee">
+                        <div class="menu-content">
+                            <h4>Ice White Coffee<span>$29</span></h4>
+                            <p>White Coffee is "A glass of white milk with a little bit of coffee". This drink is very suitable for those who want to experience the bitter taste of coffee and enjoy the greasy sweetness of milk.</p>
+                        </div>
+                    </div>
 
-                <div class="box">
-                    <img src="images/hot_espresso.jpg" alt="Hot Espresso">
-                    <h3>Hot Espresso</h3>
-                    <div class="content"></div>
-                    <span>$40</span>
-                    <a href="#">Add to cart</a>
+                    <div class="single-menu">
+                        <img src="images/ice_milk_coffee.jpg" alt="Ice Milk Coffee">
+                        <div class="menu-content">
+                            <h4>Ice Milk Coffee<span>$29</span></h4>
+                            <p>Coffee is brewed with a traditional filter combined with condensed milk to create a rich flavor, a harmony between the sweetness on the tip of the tongue and the elegant bitterness in the aftertaste.</p>
+                        </div>
+                    </div>
+
+                    <div class="single-menu">
+                        <img src="images/hot_espresso.jpg" alt="Hot Espresso">
+                        <div class="menu-content">
+                            <h4>Hot Espresso<span>$40</span></h4>
+                            <p>A cup of original Espresso starts with quality Arabica beans, mixed with a balanced ratio of Robusta beans, giving a caramel sweetness, a mild sour taste and a thick consistency.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Footer -->
         <footer>
+            <section class="footer-container">
 
+                <div class="footer-logo">
+                    <a href="#">Dreamy Coffee</a>
+
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="images/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="#">
+                            <img src="images/twitter.png" alt="Twitter">
+                        </a>
+                        <a href="#">
+                            <img src="images/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="#">
+                            <img src="images/youtube.png" alt="Youtube">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-content">
+                    <strong>Support</strong>
+                    <ul>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Help & Support</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Terms Of Use</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-content">
+                    <strong>View Guides</strong>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog Posts</a></li>
+                        <li><a href="#">Our Branches</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-content">
+                    <strong>Contact</strong>
+                    <ul>
+                        <li><a href="#">Location: 264 Swanton St, Melbourne VIC 3000</a></li>
+                        <li><a href="#">Phone: +61 401 183 589</a></li>
+                        <li><a href="#">Email: info@dreamycoffee.com.au
+                        </a></li>
+                    </ul>
+                </div>
+            </section>
         </footer>
 </body>
+
+</html>
 
 </html>

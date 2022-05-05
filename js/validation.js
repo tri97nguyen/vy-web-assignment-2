@@ -53,6 +53,6 @@ form.onsubmit = function validateInputs(e) {
         errorMessage.style.color = "red";
         errorMessageList.appendChild(errorMessage)
     }
-    
+
     return isValid; // return false denies submission
 }

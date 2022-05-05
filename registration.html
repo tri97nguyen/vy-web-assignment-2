@@ -6,72 +6,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/registration.css">
-    <title>Document</title>
+    <title>Registration Form</title>
 </head>
 
 <body>
-    <nav id="nav-bar">
-        <a class="nav-list">Logo</a>
-        <a href="index.html" class="nav-list">Home Page</a>
-        <a href="registration.html" class="nav-list active">Registration</a>
-        <a href="order.html" class="nav-list">Order</a>
-        <a href="features.html" class="nav-list">Features</a>
-    </nav>
 
     <form id="form" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
-        <h2>Sign Up</h2>
-        <div>
-            <ul id="error-message-list"></ul>
+        <div class="form-container">
+            <div class="title">Registration Form</div>
+
+            <div class="form-section">
+                <!-- Name -->
+                <div class="input">
+                    <label>First Name</label>
+                    <input type="text" name="username" class="require">
+                </div>
+
+                <div class="input">
+                    <label>Last Name</label>
+                    <input type="text" name="username" class="require">
+                </div>
+
+                <div class="input">
+                    <label>Userame</label>
+                    <input type="text" name="username" class="require">
+                </div>
+
+                <!-- Password -->
+                <div class="input">
+                    <label>Password</label>
+                    <input type="password" name="password" class="require">
+                </div>
+
+                <!-- Gender -->
+                <div class="input">
+                    <label>Gender</label>
+                    <div class="custom-select">
+                        <select class="select" name="gender" class="require">
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="non-binary">Prefer not to say</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="input">
+                    <label>Email</label>
+                    <input type="text" name="email" class="require">
+                </div>
+
+                <!-- Favorite -->
+                <div class="input">
+                    <label>Favorite Coffee</label>
+                    <div class="custom-select">
+                        <select class="select" name="coffee" class="require">
+                        <option value="">Select</option>
+                        <option value="cappuccino">Cappuccino</option>
+                        <option value="macchiato">Macchiato</option>
+                        <option value="expresso">Espresso</option>
+                        <option value="latte">Latte</option>
+                    </select>
+                    </div>
+                </div>
+
+                <!-- Opt-in -->
+                <div class="input">
+                    <label>Opt-in to our monthly e-mail</label>
+                    <input type="checkbox" name="email-opt-in">
+                </div>
+
+                <!-- Error Message List -->
+                <div>
+                    <ul id="error-message-list"></ul>
+                </div>
+
+                <!-- Button -->
+                <div class="input">
+                    <input type="reset" value="Reset" class="btn">
+                    <input type="submit" value="Submit" class="btn">
+                </div>
+
+            </div>
         </div>
-        <div>
-            <label>
-                Username:
-                <input type="text" name="username" class="require">
-            </label>
-        </div>
-        <div>
-            <label>
-                Password:
-                <input type="password" name="password" class="require">
-            </label>
-        </div>
-        <div>
-            <label>
-                male
-                <input type="radio" name="gender" value="male" class="require">
-            </label><br>
-            <label>
-                female
-                <input type="radio" name="gender" value="female" class="require">
-            </label><br>
-            <label>
-                non-binary
-                <input type="radio" name="gender" value="non-binary" class="require">
-            </label>
-            
-        </div>
-        <div>
-            <label>Email</label>
-            <input type="text" name="email"  class="require">
-        </div>
-        <div>
-            <label>Opt-in to our monthly e-mail</label>
-            <input type="checkbox" name="email-opt-in">
-        </div>
-        <div>
-            Favorite Coffee
-            <select name="coffee" class="require">
-                <option value="cappuccino">cappuccino</option>
-                <option value="macchiato">macchiato</option>
-                <option value="expresso">expresso</option>
-                <option value="latte">latte</option>
-            </select>
-        </div>
-        <button type="reset">reset</button>
-        <button type="submit">submit</button>
     </form>
 
-    <script src="js/validation.js"></script>
+    <!-- Footer -->
+    <footer>
+        <section class="footer-container ">
+
+            <div class="footer-logo ">
+                <a href="# ">Dreamy Coffee</a>
+
+                <div class="footer-social ">
+                    <a href="# ">
+                        <img src="images/facebook.png " alt="Facebook ">
+                    </a>
+                    <a href="# ">
+                        <img src="images/twitter.png " alt="Twitter ">
+                    </a>
+                    <a href="# ">
+                        <img src="images/instagram.png " alt="Instagram ">
+                    </a>
+                    <a href="# ">
+                        <img src="images/youtube.png " alt="Youtube ">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-content ">
+                <strong>Support</strong>
+                <ul>
+                    <li><a href="# ">Product</a></li>
+                    <li><a href="# ">Help & Support</a></li>
+                    <li><a href="# ">Return Policy</a></li>
+                    <li><a href="# ">Terms Of Use</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-content ">
+                <strong>View Guides</strong>
+                <ul>
+                    <li><a href="# ">Features</a></li>
+                    <li><a href="# ">Careers</a></li>
+                    <li><a href="# ">Blog Posts</a></li>
+                    <li><a href="# ">Our Branches</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-content ">
+                <strong>Contact</strong>
+                <ul>
+                    <li><a href="# ">Location: 264 Swanton St, Melbourne VIC 3000</a></li>
+                    <li><a href="# ">Phone: +61 401 183 589</a></li>
+                    <li><a href="# ">Email: info@dreamycoffee.com.au
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+    <script src="js/validation.js "></script>
 </body>
 
 </html>

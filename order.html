@@ -10,96 +10,248 @@
 </head>
 
 <body>
-    <nav id="nav-bar">
-        <a class="nav-list">Logo</a>
-        <a href="index.html" class="nav-list">Home Page</a>
-        <a href="registration.html" class="nav-list">Registration</a>
-        <a href="order.html" class="nav-list active">Order</a>
-        <a href="features.html" class="nav-list">Features</a>
-    </nav>
-    <form id="form" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
-        <div>
-            <ul id="error-message-list"></ul>
-        </div>
-        <p class="no-margin-bottom">Delivery Preference:</p>
-        <label for="html">Delivery</label>
-        <input id="delivery-toggler" type="radio" name="deliver-mode" value="delivery" class="require"><br>
-        <label for="css">Pickup</label>
-        <input id="pickup-toggler" type="radio" name="deliver-mode" value="pickup" class="require"><br>
 
-        <div id="delivery-address-block">
+
+    <form id="form" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+        <div class="form-container">
+            <div class="title">Order Form</div>
+
+            <div class="form-section">
+
+                <!-- Delivery Preference -->
+                <div class="input">
+                    <label class="no-margin-bottom">Delivey Preference</label>
+                    <div>
+                        <label for="html">Delivery</label>
+                        <input id="delivery-toggler" type="radio" name="deliver-mode" value="delivery" class="require"><br>
+                        <label for="css">Pickup</label>
+                        <input id="pickup-toggler" type="radio" name="deliver-mode" value="pickup" class="require">
+                    </div>
+                </div>
+
+                <!-- Delivery Address -->
+                <div class="input" id="delivery-address-block">
+                    <label>Delivery Address</label>
+                    <input type="text" id="delivery-address-input" name="delivery-address" />
+                </div>
+
+                <!-- Billing Address -->
+                <div class="input" id="billing-address-block">
+                    <label>Billing Address</label>
+                    <label id="error-message">Please enter your delivery address first!!</label>
+                    <label id="same-as-delivery-block">Same as delivery address
+                    <input type="checkbox" id="same-as-delivery" name="same-as-delivery" /><br>
+                    </label>
+                    <input type="text" id="billing-address-input" name="billing-address" class="require" />
+                </div>
+
+                <!-- Contact Number -->
+                <div class="input">
+                    <label>Contact Number</label>
+                    <input type="text" name="contact" class="require" />
+                </div>
+
+                <!-- Email -->
+                <div class="input">
+                    <label>Email</label>
+                    <input type="email" name="email" class="require" />
+                </div>
+
+                <!-- Payment Method -->
+                <div class="input">
+                    <label class="no-margin-bottom">Payment Method</label>
+                    <div>
+                        <label>Pay On Pickup</label>
+                        <input id="pay-pickup" type="radio" name="pay" value="pickup" class="require" /><br>
+                        <label>Pay Online</label>
+                        <input id="pay-online" type="radio" name="pay" value="online" class="require" />
+                    </div>
+                </div>
+
+                <!-- Credit Card -->
+                <div class="input" id="credit-card-block">
+                    <label>Credit Card Information</label>
+                    <label>Card Type</label><br>
+                    <label>Visa</label>
+                    <input class="credit-radio-btn" type="radio" name="card-type" value="visa" /><br>
+                    <label>Mastercard</label>
+                    <input class="credit-radio-btn" type="radio" name="card-type" value="mastercard" /><br>
+                    <label>Amex</label>
+                    <input class="credit-radio-btn" type="radio" name="card-type" value="amex" />
+                    <br>
+                    <label>Card Number</label>
+                    <input class="card-input" id="card-number-input" type="text" name="card-number" /><br>
+                    <label>Name On Card</label>
+                    <input class="card-input" type="text" name="name-on-card" /><br>
+                    <label>Security code (CVV/CVC)</label>
+                    <input class="card-input" type="password" name="cvv" maxlength="4" /><br>
+                    <label>Expiration Date</label>
+                    <input class="card-input" type="date" name="expiration-date" /><br>
+                    <label>Postcode</label>
+                    <input class="card-input" type="text" name="post-code" />
+                    </label>
+
+                </div>
+
+                <!-- Error Message List -->
+                <div>
+                    <ul id="error-message-list"></ul>
+                </div>
+
+                <!-- Button -->
+                <div class="input">
+                    <input type="reset" value="Reset" class="btn">
+                    <input type="submit" value="Submit" class="btn">
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Delivery Preference -->
+        <!-- <p class="no-margin-bottom">Delivery Preference:</p>
+        <label for="html">Delivery</label>
+                    <input id="delivery-toggler" type="radio" name="deliver-mode" value="delivery" class="require"><br>
+                    <label for="css">Pickup</label>
+                    <input id="pickup-toggler" type="radio" name="deliver-mode" value="pickup" class="require"><br> -->
+
+        <!-- Delivery Address -->
+        <!-- <div id="delivery-address-block">
             <label>
                 Delivery Address:
                 <input type="text" id="delivery-address-input" name="delivery-address" />
             </label>
-        </div>
+        </div> -->
 
-        <div id="billing-address-block">
+        <!-- Billing Address -->
+        <!-- <div id="billing-address-block">
             <label>Billing Address:</label>
             <p id="error-message">Please enter your delivery address first!</p>
             <label id="same-as-delivery-block">Same as delivery address
                 <input type="checkbox" id="same-as-delivery" name="same-as-delivery" />
             </label>
             <input type="text" id="billing-address-input" name="billing-address" class="require" />
-        </div>
+        </div> -->
 
-        <div>
-            <label >
+        <!-- Contact Number -->
+        <!-- <div>
+            <label>
                 Contact Number:
                 <input type="text" name="contact" class="require" />
             </label>
-        </div>
+        </div> -->
 
-        <div>
-            <label >
+        <!-- Email -->
+        <!-- <div>
+            <label>
                 Email:
                 <input type="email" name="email" class="require" />
             </label>
-        </div>
+        </div> -->
 
-
-        <div>
-            <label >
+        <!-- Payment Method -->
+        <!-- <div>
+            <label>
                 <p class="no-margin-bottom">Payment Method:</p>
                 <label>Pay On Pickup</label>
-                <input id="pay-pickup" type="radio" name="pay" value="pickup" class="require" />
-                <label>Pay Online</label>
-                <input id="pay-online" type="radio" name="pay" value="online" class="require" />
+            <input id="pay-pickup" type="radio" name="pay" value="pickup" class="require" />
+            <label>Pay Online</label>
+            <input id="pay-online" type="radio" name="pay" value="online" class="require" />
             </label>
-        </div>
+        </div> -->
 
-
-        <div id="credit-card-block">
+        <!-- Credit Card -->
+        <!-- <div id="credit-card-block">
             <label>
                 <p>Credit Card Information:</p>
                 <p>Card Type:</p>
                 <label>Visa</label>
-                <input class="credit-radio-btn" type="radio" name="card-type" value="visa" />
-                <label>Mastercard</label>
-                <input class="credit-radio-btn" type="radio" name="card-type" value="mastercard" />
-                <label>Amex</label>
-                <input class="credit-radio-btn" type="radio" name="card-type" value="amex" />
-                <br>
-                <label>Card Number:</label>
-                <input class="card-input" id="card-number-input" type="text" name="card-number" /><br>
-                <label>Name On Card:</label>
-                <input class="card-input" type="text" name="name-on-card" /><br>
-                <label>Security code (CVV/CVC):</label>
-                <input class="card-input" type="password" name="cvv" maxlength="4" /><br>
-                <label>Expiration Date:</label>
-                <input class="card-input" type="date" name="expiration-date" />
-                <label>Postcode:</label>
-                <input class="card-input" type="text" name="post-code" />
+            <input class="credit-radio-btn" type="radio" name="card-type" value="visa" />
+            <label>Mastercard</label>
+            <input class="credit-radio-btn" type="radio" name="card-type" value="mastercard" />
+            <label>Amex</label>
+            <input class="credit-radio-btn" type="radio" name="card-type" value="amex" />
+            <br>
+            <label>Card Number:</label>
+            <input class="card-input" id="card-number-input" type="text" name="card-number" /><br>
+            <label>Name On Card:</label>
+            <input class="card-input" type="text" name="name-on-card" /><br>
+            <label>Security code (CVV/CVC):</label>
+            <input class="card-input" type="password" name="cvv" maxlength="4" /><br>
+            <label>Expiration Date:</label>
+            <input class="card-input" type="date" name="expiration-date" />
+            <label>Postcode:</label>
+            <input class="card-input" type="text" name="post-code" />
             </label>
-        </div>
+        </div> -->
 
-        <button type="reset">reset</button>
+        <!-- Error Message List -->
+        <!-- <div>
+            <ul id="error-message-list"></ul>
+        </div> -->
+
+        <!-- Button -->
+        <!-- <button type="reset">reset</button>
         <button type="submit">submit</button>
+    </form> -->
 
+        <!-- Footer -->
+        <footer>
+            <section class="footer-container">
 
-    </form>
-    <script src="js/order.js"></script>
-    <script src="js/validation.js"></script>
+                <div class="footer-logo">
+                    <a href="#">Dreamy Coffee</a>
+
+                    <div class="footer-social">
+                        <a href="#">
+                            <img src="images/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="#">
+                            <img src="images/twitter.png" alt="Twitter">
+                        </a>
+                        <a href="#">
+                            <img src="images/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="#">
+                            <img src="images/youtube.png" alt="Youtube">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-content">
+                    <strong>Support</strong>
+                    <ul>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Help & Support</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Terms Of Use</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-content">
+                    <strong>View Guides</strong>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog Posts</a></li>
+                        <li><a href="#">Our Branches</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-content">
+                    <strong>Contact</strong>
+                    <ul>
+                        <li><a href="#">Location: 264 Swanton St, Melbourne VIC 3000</a></li>
+                        <li><a href="#">Phone: +61 401 183 589</a></li>
+                        <li><a href="#">Email: info@dreamycoffee.com.au
+                    </a></li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+
+        <script src="js/order.js"></script>
+        <script src="js/validation.js"></script>
 </body>
 
 </html>

@@ -10,6 +10,23 @@
 </head>
 
 <body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <img src="images/logo.png" alt="Logo" width="50">
+            <!-- Bars-icon -->
+            <div class="toggle"></div>
+            <!-- Menu-bar -->
+            <ul class="menu-bar">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="registration.html" class="active">Registration</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="features.html">Features</a></li>
+            </ul>
+
+        </nav>
+    </header>
 
     <form id="form" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
         <div class="form-container">
@@ -42,7 +59,7 @@
                 <div class="input">
                     <label>Gender</label>
                     <div class="custom-select">
-                        <select class="select" name="gender" class="require">
+                        <select class="select require" name="gender">
                             <option value="">Select</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
@@ -61,7 +78,7 @@
                 <div class="input">
                     <label>Favorite Coffee</label>
                     <div class="custom-select">
-                        <select class="select" name="coffee" class="require">
+                        <select class="select require" name="coffee">
                         <option value="">Select</option>
                         <option value="cappuccino">Cappuccino</option>
                         <option value="macchiato">Macchiato</option>
@@ -83,7 +100,7 @@
                 </div>
 
                 <!-- Button -->
-                <div class="input">
+                <div class="input btn-group">
                     <input type="reset" value="Reset" class="btn">
                     <input type="submit" value="Submit" class="btn">
                 </div>

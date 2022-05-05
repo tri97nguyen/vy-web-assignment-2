@@ -1,6 +1,7 @@
 /* Google font */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Ubuntu+Mono&display=swap');
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -14,7 +15,7 @@
 
 /* Variables */
 
- :root {
+:root {
     --main-color: #c7c7c7;
     --second-color: #8a5a44;
     --text-color: #9c6644;
@@ -29,14 +30,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    left: 15%;
-    transform: translate(-15%, -5%);
-    width: 100%;
-    z-index: 2 !important;
-    margin: auto;
     padding: 20px;
-    max-width: 20000px;
     background-color: var(--bg-color);
 }
 
@@ -77,6 +71,7 @@
     justify-content: center;
     align-items: center;
     font-size: x-large;
+    text-align: center;
 }
 
 
@@ -85,7 +80,8 @@
 #about-us-section {
     display: flex;
     flex-direction: row;
-    text-align: justify;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #about-us-section img {
@@ -97,6 +93,7 @@
 #second-child,
 #third-child {
     width: 33%;
+    text-align: justify;
 }
 
 
@@ -168,7 +165,6 @@
 /* Our Menu */
 
 .menu-section {
-    width: 1200px;
     margin: 40px auto;
 }
 
@@ -186,14 +182,17 @@
 .menu {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+
 }
 
 .single-menu {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    row-gap: 0;
     align-items: center;
-    flex-basis: 550px;
+    width: 40vw;
     margin-bottom: 25px;
     padding-bottom: 25px;
     border-bottom: 1px solid lightgray;
@@ -201,11 +200,6 @@
 
 .single-menu:hover img {
     border-radius: 0;
-}
-
-.single-menu:nth-child(5),
-.single-menu:nth-child(6) {
-    border-bottom: 0;
 }
 
 .single-menu img {
@@ -240,11 +234,11 @@ footer {
 }
 
 .footer-container {
-    max-width: 1100px;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .footer-logo {
@@ -292,4 +286,22 @@ footer {
 .footer-content ul li a:hover {
     text-decoration: underline;
     transition: all ease 0.2s;
+}
+
+/* mobile */
+@media only screen and (max-width: 650px) {
+    #first-child,
+    #second-child,
+    #third-child {
+        width: 90vw;
+        text-align: center;
+    }
+    
+    .single-menu {
+        width: 80vw;
+    }
+
+    .foot-logo, .footer-content {
+        width: 40vw;
+    }
 }

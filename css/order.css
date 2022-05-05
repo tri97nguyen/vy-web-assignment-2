@@ -9,6 +9,7 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
+    color: var(--third-color)
 }
 
 
@@ -33,14 +34,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    left: 15%;
-    transform: translate(-15%, -5%);
-    width: 100%;
-    z-index: 2 !important;
-    margin: auto;
     padding: 20px;
-    max-width: 20000px;
     background-color: var(--bg-color);
 }
 
@@ -89,7 +83,6 @@ body {
 
 .form-container .form-section .input {
     margin-bottom: 15px;
-    display: flex;
     align-items: center;
 }
 
@@ -97,15 +90,30 @@ body {
     width: 550px;
     color: var(--third-color);
     margin-right: 10px;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .form-container .form-section .input input {
     width: 100%;
     outline: none;
-    font-size: 15px;
+    font-size: 16px;
     transition: all ease 0.3s;
     padding: 2px;
+}
+
+#same-as-delivery {
+    width: fit-content;
+}
+
+.form-container .form-section .input .credit-radio-btn {
+    width: fit-content;
+    margin-left: 100px;
+    font-size: 16px;
+}
+
+.form-container .form-section .radio-container {
+    display: flex;
+    justify-content: space-around;
 }
 
 .form-container .form-container .input .custom_select {
@@ -118,7 +126,7 @@ body {
     width: 100%;
     height: 100%;
     outline: none;
-    font-size: 15px;
+    font-size: 16px;
     transition: all ease 0.3s;
     padding: 2px;
 }
@@ -126,7 +134,7 @@ body {
 .form-container .form-section .input .btn {
     width: 100%;
     padding: 2px;
-    font-size: 15px;
+    font-size: 16px;
     cursor: pointer;
     background: var(--text-color);
     border-radius: 3px;
@@ -159,6 +167,12 @@ body {
 
 #credit-card-block {
     display: none;
+    padding-top: 30px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -170,11 +184,11 @@ footer {
 }
 
 .footer-container {
-    max-width: 1100px;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .footer-logo {
@@ -222,4 +236,12 @@ footer {
 .footer-content ul li a:hover {
     text-decoration: underline;
     transition: all ease 0.2s;
+}
+
+@media only screen and (max-width: 650px) {
+
+
+    .foot-logo, .footer-content {
+        width: 40vw;
+    }
 }

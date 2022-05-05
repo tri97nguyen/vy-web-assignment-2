@@ -1,18 +1,224 @@
-#nav-bar {
-    display: flex;
-    flex-direction: row;
-    background-color: aquamarine;
+/* Google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Ubuntu+Mono&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
 }
 
-.nav-list {
-    list-style-type: none;
-    background-color: blueviolet;
-    border-color: aquamarine;
-    border-style: groove;
-    text-decoration: none;
+
+/* Variables */
+
+:root {
+    --main-color: #c7c7c7;
+    --second-color: #8a5a44;
+    --text-color: #9c6644;
+    --bg-color: black;
+    --third-color: #553725;
+}
+
+body {
+    background: var(--second-color);
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--bg-color);
+}
+
+.menu-bar {
+    display: flex;
+}
+
+.menu-bar li a {
+    padding: 10px 16px;
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.menu-bar .active,
+.menu-bar li a:hover {
+    color: #9c6644;
+    font-weight: bold;
+    transition: all ease 0.2s;
+}
+
+a {
     color: white;
 }
 
-.active {
-    background-color: brown;
+#feature-list li {
+    margin: 30px;
+}
+
+
+body > div {
+    text-align: center;
+}
+
+/* Form */
+
+.form-container {
+    padding: 30px;
+    max-width: 700px;
+    width: 100%;
+    background: var(--main-color);
+    margin: 30px auto;
+    box-shadow: 10px 10px var(--third-color);
+}
+
+.form-container .title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: var(--third-color);
+    text-align: center;
+}
+
+.form-container .form-section {
+    width: 100%;
+}
+
+.form-container .form-section .input {
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.form-container .form-section .input label {
+    width: 550px;
+    color: var(--third-color);
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.form-container .form-section .input input {
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    transition: all ease 0.3s;
+    padding: 2px;
+}
+
+.form-container .form-section .input input[type=checkbox] {
+    width: fit-content;
+}
+
+.form-container .form-container .input .custom_select {
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+
+.select {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 15px;
+    transition: all ease 0.3s;
+    padding: 2px;
+}
+
+.form-container .form-section .input .btn {
+    width: 100%;
+    padding: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    background: var(--text-color);
+    border-radius: 3px;
+    outline: none;
+}
+
+.form-container .form-section .input .btn:hover {
+    background: #B07D62;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+bottom: 0;
+width: 100%;
+    background-color: var(--bg-color);
+    padding: 50px 20px;
+}
+
+.footer-container {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo a {
+    color: var(--second-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.footer-social {
+    margin-top: 10px;
+}
+
+.footer-social a img {
+    filter: invert(1);
+    width: 35px;
+}
+
+.footer-content strong {
+    color: var(--second-color);
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.footer-content ul {
+    margin-top: 10px;
+}
+
+.footer-content ul li a {
+    color: var(--main-color);
+    margin: 4px 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: all ease 0.2s;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+    transition: all ease 0.2s;
+}
+
+@media only screen and (max-width: 650px) {
+
+
+    .foot-logo, .footer-content {
+        width: 40vw;
+    }
 }
